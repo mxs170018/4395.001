@@ -1,7 +1,7 @@
 # Portfolio 1
 
 ## Description
-This [python file](Portfolio1_MXS170018_4395.001) takes in a text file that holds data of a person
+This [python file](Portfolio1_MXS170018_4395.001.py) takes in a text file that holds data of a person
 I.E First name, Last Name, Middle Initial, Person ID, and Phone number
 
 and it parses the data so that it can be cleaned and rectified
