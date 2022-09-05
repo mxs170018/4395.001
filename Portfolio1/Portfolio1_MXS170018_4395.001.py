@@ -92,10 +92,13 @@ def parseFile(people):
             newID = input()
             matches = personId.fullmatch(newID)
             
-        
+        tempList[3] = newID
         # the 5th element is a phone number
         # If the phone number is of length 10 and they are all digits
         # then it is safe to say it is a valid phone number
+        
+        
+        
         if len(tempList[4])==10 and tempList[4].isdigit():
             # We add the dashes here for display purposes
             tempList[4] = tempList[4][:3]+"-"+tempList[4][3:6] + "-" + tempList[4][6:10]
@@ -108,19 +111,42 @@ def parseFile(people):
 
             # if it does not match then we prompt the user for anew
             # one until it does match
-            while not matches2:
-                print("Phone " + newPhone +"  is invalid")
-                print("Enter phone number in form 123-456-7890")
-                print("Enter phone number: ",end=" ")
-                newPhone = input()
-                matches2 = pnumberMod.fullmatch(newPhone)
-            # We add the dashes here for display purposes
-            tempList[4] = tempList[4][:3]+"-"+tempList[4][4:7] + "-" + tempList[4][8:12]
+            if not matches2: 
+                while not matches2:
+                    print("Phone " + newPhone +"  is invalid")
+                    print("Enter phone number in form 123-456-7890")
+                    print("Enter phone number: ",end=" ")
+                    newPhone = input()
+                    matches2 = pnumberMod.fullmatch(newPhone)
+                    
+                # We add the dashes here for display purposes
+                tempList[4] = newPhone
+            else: 
+                tempList[4] = tempList[4][:3]+"-"+tempList[4][4:7] + "-" + tempList[4][8:12]
         
+        if tempList[3] in peoples:
+            # loops it until it is both not in people 
+            # and is fit to the regEx pattern denoted above
+            while tempList[3] in peoples:
+                print("Error: This ID already exists: ", end="")
+                print(tempList[3])
+                print("ID is two letters followed by 4 digits")
+                print("please enter a valid id: ",end=" ")
+                newID = input()
+                matches = personId.fullmatch(newID)
+                while not matches:
+                    print("ID is two letters followed by 4 digits")
+                    print("please enter a valid id: ",end=" ")
+                    newID = input()
+                    matches = personId.fullmatch(newID)
+                tempList[3] = newID
         # when it is all clean we initialize a new person object
         # and we add it to the dictionary defined above with their
         # key corresponding to the person ID
         peoples[tempList[3]]= person(tempList[0],tempList[1],tempList[2],tempList[3],tempList[4])
+        
+        
+        
 
     #return the dictionary of people
     return peoples
@@ -158,3 +184,4 @@ if __name__ == '__main__':
         for x in picklePeople:
             picklePeople[x].display()
         
+            
