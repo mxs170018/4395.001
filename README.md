@@ -16,3 +16,6 @@ you can see the [python notebook](4395.001-Portfolio2-MXS170018.ipynb) which dem
 
 ## Guessing Game
 you can see the [folder here](GuessingGame) which holds a text file with a chapter from an anatomy text book and a python file that takes in a path to a text file. This program preprocess the text and displays its lexical diversity. It then isolates the 50 most frequent nouns for a guessing game.
+
+## Word Net
+you can see a walkthrough of NTLK's Wordnet in the [pdf here](WordNet.pdf)
