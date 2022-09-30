@@ -8,9 +8,9 @@ This [python file](languagePrediction.py) takes in two files, one that holds sen
 ## Running
 run [python file](languageNGram.py) with any number of LangId.train.XXXX files as arguments
 
-python languageNGram.py LangId.train.English LangId.train.French LangId.train.Italian
+### $: python languageNGram.py LangId.train.English LangId.train.French LangId.train.Italian
 
 
 afterwards run [python file](languagePrediction.py) with a test file and a solution file as arguments
 
-python languagePrediction.py LangId.test LangId.sol
+### $: python languagePrediction.py LangId.test LangId.sol
