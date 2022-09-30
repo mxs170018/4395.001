@@ -7,4 +7,5 @@ This [python file](languagePrediction.py) takes in two files, one that holds sen
 
 ## Running
 run [python file](languageNGram.py) with any number of LangId.train.XXXX files as arguments
+
 afterwards run [python file](languagePrediction.py) with a test file and a solution file as arguments
