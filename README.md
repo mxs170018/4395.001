@@ -19,3 +19,6 @@ you can see the [folder here](GuessingGame) which holds a text file with a chapt
 
 ## Word Net
 you can see a walkthrough of NTLK's Wordnet in the [pdf here](WordNet.pdf)
+
+## Language prediction with N-Grams
+you can see the [folder here](Language prediciton with N-Grams) which holds two files that work together to create a unigram and bigram occurence dictionary on the language corpa provided which is then used to predict whether a given text is of the languages provided
