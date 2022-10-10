@@ -129,8 +129,8 @@ if __name__ == '__main__':
             line = f.readline()
             if line == '':
                 break
-            file = webScraper(line,counter)
-            processScrape(file)
+            #file = webScraper(line,counter)
+            #processScrape(file)
             counter += 1
     all_text = ""
     for i in range(0,counter):
@@ -138,10 +138,13 @@ if __name__ == '__main__':
         with open(newFile,'r') as f:
             stuff = f.read()
         all_text += stuff
-    tokens = word_tokenize(all_text)
-
+    
+    
+    tokens = word_tokenize(str(all_text))
+    tokens = [t.lower() for t in tokens if t not in stopwords.words('english')]
     freq = {}
     for token in tokens:
+        
         if token not in freq:
             freq[token]=1
         elif token in freq:
