@@ -129,8 +129,8 @@ if __name__ == '__main__':
             line = f.readline()
             if line == '':
                 break
-            #file = webScraper(line,counter)
-            #processScrape(file)
+            file = webScraper(line,counter)
+            processScrape(file)
             counter += 1
     all_text = ""
     for i in range(0,counter):
