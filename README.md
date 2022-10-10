@@ -22,3 +22,6 @@ you can see a walkthrough of NTLK's Wordnet in the [pdf here](WordNet.pdf)
 
 ## Language prediction with N-Grams
 you can see the [folder here](Language_prediciton_with_N-Grams) which holds two files that work together to create a unigram and bigram occurence dictionary on the language corpa provided which is then used to predict whether a given text is of the languages provided
+
+## Web Crawler: George Washington
+you can see the [folder here](WebCrawler) which takes in 2 George Washington related URLS and crawls on them to find relevant URLS. Afterwards it scrapes the text and processes it and outputs to a file. Then it creates a knowledge base on 10 relevant frequent words where each word has a list of correlated sentences. It pickles the knowledge base for usage on another program
