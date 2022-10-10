@@ -1,23 +1,16 @@
-# Portfolio 1
+# Predicting a language with N-Grams
 
 ## Description
-This [python file](Portfolio1_MXS170018_4395.001.py) takes in a text file that holds data of a person
-I.E First name, Last Name, Middle Initial, Person ID, and Phone number
+This [python file](languageNGram.py) takes in N number of files LangId.train.XXXX files where XXXX represents a language. The files provided are corpora of languages for the file to extract bigram and unigrams. They are each placed into a dictionary where the key is the N-gram and the value is the occurence in the corpora. These dictionaries are pickled for extraction in the second file. Two pickle files should be created per language as well as a single arg.txt file (which holds the arg[v] for this file and N)
 
-and it parses the data so that it can be cleaned and rectified
-afterwards it is puts the data into a dictionary and then 
-pickles and unpickles it before printing the modified data
+This [python file](languagePrediction.py) takes in two files, one that holds sentences of different languages and the other holds the correct solution corresponding to the line numbers. The program will unpickle the pickled files from before based on the languages in arg.txt. It will predict the language for every line in the test file by running LaPlace smoothing and extracting the best match. It then checks the predictions against the solution and outputs an accuracy
 
 ## Running
-run the python file with the path for the datafile as an argument
+run [python file](languageNGram.py) with any number of LangId.train.XXXX files as arguments
 
-## Python word processing
-This is my first time using python for word processing and it hit me hard
-to find out that strings are immutable in python, so I couldn't modify a string at an index
-what was interesting though was the usage of RegEx. Generally, it took me longer to use python
-than it would have taken me to use Java, but I am going to chalk it up to inexperience
+### $: python languageNGram.py LangId.train.English LangId.train.French LangId.train.Italian
 
-## Reflection
-I had also never used RegEx before, but i found it enticing. it will be a very useful addition to my toolkit. 
-I learned how to apply some basic python fundamentals. It's hard getting used to not having every variable 
-be declared as a certain type. Everything was new to me, but I enjoyed it. 
+
+afterwards run [python file](languagePrediction.py) with a test file and a solution file as arguments
+
+### $: python languagePrediction.py LangId.test LangId.sol
