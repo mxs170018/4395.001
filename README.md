@@ -28,3 +28,7 @@ you can see the [folder here](WebCrawler) which takes in 2 George Washington rel
 
 ## Hand-Annotated Sentence Parsing
 you can see the [pdf here](SentenceParsingComparison.pdf) for some explanation on a hand drawn Constituency Parse Tree, Dependency Parse Graph, and a Semantic Role Parse 
+
+## ACL Paper Summary
+A brief summary on the paper "Align Voter Behavior with Public Statements for Legislator Representation Learning" from the Association of Computational Linguistics (ACL) conference
+
