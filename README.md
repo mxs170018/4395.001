@@ -35,5 +35,5 @@ A brief summary on the paper "Align Voter Behavior with Public Statements for Le
 ## Simple Chatbot - MEB 
 here is a [folder](meb-ChatBot) containing the code to run a simple chatbot named MEB. 
 
-## Machine Learning Author Attribution Federalist papers
+## Author Attribution Federalist papers
 here is a [folder](federalist) that contains a jupyter notebook walking through how machine learning was used to predict which author was responsible for writing which federalist paper. 
