@@ -32,3 +32,6 @@ you can see the [pdf here](SentenceParsingComparison.pdf) for some explanation o
 ## ACL Paper Summary
 A brief summary on the paper "Align Voter Behavior with Public Statements for Legislator Representation Learning" from the Association of Computational Linguistics (ACL) conference available as a [pdf](MXS170018_ACL-Paper-Summary.pdf)
 
+## Simple Chatbot - MEB 
+here is a [folder](meb-ChatBot) containing the code to run a simple chatbot named MEB. 
+
