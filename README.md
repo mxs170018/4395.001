@@ -37,3 +37,6 @@ here is a [folder](meb-ChatBot) containing the code to run a simple chatbot name
 
 ## Author Attribution Federalist papers
 here is a [folder](federalist) that contains a jupyter notebook walking through how machine learning was used to predict which author was responsible for writing which federalist paper. 
+
+## Humor classification 200k samples
+here is a [pdf](humorClassification_RNN_SEQ_LSTM_GRU.pdf) for analyzing the accuracy of 4 models SEQ,GRU,LSTM,RNN on classifying whether a text is humorous.
